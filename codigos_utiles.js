@@ -1,5 +1,68 @@
 CODIGOS UTILES 
 
+//grid completamente responsive sin media queries
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+.container-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	
+}
+
+.cajita {
+	width: 25%;
+	height: 25%;
+	background-color: red;
+	line-height: 200px;
+	text-align: center;
+	margin: 10px;
+	
+}
+
+.container-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 230px);
+	gap: 40px;
+	padding: 40px;
+	justify-content: center;
+	
+}
+
+.cajita-grid {
+	background-color: green;
+	width: 230px;
+	height: 345px;
+	line-height: 345px;
+	text-align: center;
+	
+}
+
+@media (max-width: 560px) {
+	.cajita{
+		width: 100%;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	
+	
+	
+	.cajita {
+		width: 50%;
+		
+	}
+	
+}
+
 
 
 //codigo para mantener la conecion con la base de datos viva y q no se cierre 
